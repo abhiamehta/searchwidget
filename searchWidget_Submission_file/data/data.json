@@ -1,0 +1,24 @@
+[{"id": 1,
+  "name": "ABC",
+  "phone_num": "89781939412934783",
+  "email": "ABC@census.gov",
+  "policy_num": "89781939412934783"
+}, {
+  "id": 2,
+  "name": "XYZ",
+  "phone_num": "62346283",
+  "email": "xyz@census.gov",
+  "policy_num": "62873468723"
+},{
+  "id": 3,
+  "name": "PQR",
+  "phone_num": "Penddreth",
+  "email": "PQR@census.gov",
+  "policy_num": "387468273468723"
+},{
+  "id": 4,
+  "name": "MNO",
+  "phone_num": "Penddreth",
+  "email": "mno@census.gov",
+  "policy_num": "3294798234798"
+}]

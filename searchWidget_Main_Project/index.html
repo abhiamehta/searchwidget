@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="searchWidgetApp">
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+  <link href="src/app.scss" type="text/css" rel="stylesheet/scss">
+  <link href="dist/app.full.min.css" type="text/css" rel="stylesheet" data-concat="false">
+</head>
+<body>
+
+  <!-- Livereload script for development only (stripped during dist build) -->
+  <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
+
+  <!-- JS from Bower Components -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <!-- Add New Bower Component JS Above -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Main App JS -->
+  <script src="src/app.js"></script>
+  <!-- Add New Component JS Above -->
+  <div>
+    <div id="content" class="container">
+      <div class="row">
+        <div ui-view>
+          <div ng-controller="searchWidgetViewController as vm">               
+              <search-widget-component dataset="vm.searchData" success="vm.searchSuccessCallBack()"></search-widget-component>
+              Hi Hello
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
