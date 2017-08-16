@@ -1,15 +1,17 @@
-<div class="col-lg-8">
-    <form id="search-widget-form" class="form-search form-horizontal pull-right">
-        <div class="input-append span12">
-            <input type="text" class="search-input" ng-model="enteredText" placeholder="search(Client Name/Policy Number)">
-            <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+<div class="row">
+    <div class="col-lg-8">
+        <form id="search-widget-form" class="form-search form-horizontal pull-right">
+            <div class="input-append span12">
+                <input type="text" class="search-input" ng-model="enteredText" placeholder="search(Client Name/Policy Number)">
+                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+            </div>
+        </form>
+        <div class="items search-display-table" ng-hide="!enteredText.length || selected">
+          <div class="item span12 search-display-table-row" ng-repeat="item in $ctrl.dataset | filter:enteredText  track by $index" ng-click="vm.alertmessage(item)" style="cursor:pointer" ng-class="{active:isCurrent($index)}">
+            <div class="item-name-display">{{item.name}}</div>
+            <div class="item-other-display"><span class="item-other-cell"><i class="fa fa-phone"></i>{{item.phone_num}}</span><span class="item-other-cell"><i class="fa fa-at"></i>{{item.email}}</span><span class="item-other-cell"><i class="fa fa-file-text"></i>{{item.policy_num}}</span></div>
+          </div>
         </div>
-    </form>
-    <div class="items search-display-table" ng-hide="!enteredText.length || selected">
-      <div class="item span12 search-display-table-row" ng-repeat="item in $ctrl.dataset | filter:enteredText  track by $index" ng-click="vm.alertmessage(item)" style="cursor:pointer" ng-class="{active:isCurrent($index)}">
-        <div class="item-name-display">{{item.name}}</div>
-        <div class="item-other-display"><span class="item-other-cell"><i class="fa fa-phone"></i>{{item.phone_num}}</span><span class="item-other-cell"><i class="fa fa-at"></i>{{item.email}}</span><span class="item-other-cell"><i class="fa fa-file-text"></i>{{item.policy_num}}</span></div>
-      </div>
-    </div>
-</div>    
+    </div>    
+</div>
 
