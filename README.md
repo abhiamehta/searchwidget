@@ -2,6 +2,7 @@ This Repo contains 2 folders
 
 1. searchWidget_Main_Project
 2. searchWidget_Submission_file
+3. searchWidget_screenshots(screenshots for final project)
 
 SearchWidget_Main_Project contains full yo generated project which can be downloaded and cna be run through grunt serve
 
