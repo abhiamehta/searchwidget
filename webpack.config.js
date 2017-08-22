@@ -13,7 +13,7 @@ var config = {
   output: {
     path: BUILD_DIR,
     filename: "npm-search-widget.js",
-    library: "abSearchWidget",
+    library: "npmSearchWidget",
     libraryTarget: "commonjs2"
   },
   module: {
