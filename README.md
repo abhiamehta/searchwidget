@@ -1,30 +1,20 @@
-This Repo contains 2 folders
+Search Widget Component is a reusable angular component for search bar.
 
-1. searchWidget_Main_Project
-2. searchWidget_Submission_file
-3. searchWidget_screenshots(screenshots for final project)
+To use search widget in to your application you need to install it through npm using below command.
 
-SearchWidget_Main_Project contains full yo generated project which can be downloaded and cna be run through grunt serve
+npm install npm-search-widget
 
-searchWidget_Submission_file contains below files
+PFB link of npm package.
 
-1. App.js contains app definition controler definition and searchwidget component definition
-2. App.scss contains scss for component
-3. App.css contains css for component
-4. font folder contains custom fonts
-5. data folder contains data.json which has data.
-6. searchWidget.template.html contains html for component.
-7. index.html contains usage of component in html.
+https://www.npmjs.com/package/npm-search-widget
+
+you can refer screenshots at below URL
+
+https://drive.google.com/open?id=0ByERro4-zQ4fQXJDN01TbzJZSFE
 
 
+this component can accept two params.
 
-Achieved below tasks.
+1. dataset : it can aceept promiese and array of data.
 
-1. Created component for search widget not directive.
-2. Used SASS with BEM
-3. Used Bootstrap
-4. used colors as $col-blue, $col-black
-5. used flexbox for table columns
-6. search result should over lay other contents
-7. Used third party fonts(I have tried to implement free font https://fontbundles.net/free-fonts/tragic-marker).
-8. Used vm instead of $scope.
+2. success : this param accepts success callback of your selection.
