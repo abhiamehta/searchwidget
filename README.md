@@ -7,13 +7,11 @@ How to Install:
 		npm install npm-search-widget
 		
 	PFB link of npm package.
-	
 		https://www.npmjs.com/package/npm-search-widget
 		
 ScreenShots:
 
 	You can refer screenshots at below URL
-	
 	https://drive.google.com/open?id=0ByERro4-zQ4fQXJDN01TbzJZSFE
 
 Parameters:
